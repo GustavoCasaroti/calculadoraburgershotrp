@@ -1,0 +1,285 @@
+
+<link href="css.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript">
+			function calcular() {
+				var total = 0;
+
+        /* LANCHES */
+        var burger = parseInt(document.getElementById("burger").value);
+				if(burger > 0){
+					total += burger*60;
+				}
+				var veganburger = parseInt(document.getElementById("veganburger").value);
+				if(veganburger > 0){
+					total += veganburger*70;
+				}
+
+				/* OUTROS */
+				var batata = parseInt(document.getElementById("batata").value);
+				if(batata > 0){
+					total += batata*45;
+				}
+				var dog = parseInt(document.getElementById("dog").value);
+				if(dog > 0){
+					total += dog*55;
+				}
+				var frango = parseInt(document.getElementById("frango").value);
+				if(frango > 0){
+					total += frango*55;
+				}
+				var espetoc = parseInt(document.getElementById("espetoc").value);
+				if(espetoc > 0){
+					total += espetoc*60;
+				}
+				var espetof = parseInt(document.getElementById("espetof").value);
+				if(espetof > 0){
+					total += espetof*60;
+				}
+				var bife = parseInt(document.getElementById("bife").value);
+				if(bife > 0){
+					total += bife*65;
+				}
+
+				/* BEBIDAS */
+				var agua = parseInt(document.getElementById("agua").value);
+				if(agua > 0){
+					total += agua*25;
+				}
+				var suco = parseInt(document.getElementById("suco").value);
+				if(suco > 0){
+					total += suco*30;
+				}
+				var refricasa = parseInt(document.getElementById("refricasa").value);
+				if(refricasa > 0){
+					total += refricasa*40;
+				}
+				var refricsdiet = parseInt(document.getElementById("refricsdiet").value);
+				if(refricsdiet > 0){
+					total += refricsdiet*40;
+				}
+				var lecola = parseInt(document.getElementById("lecola").value);
+				if(lecola > 0){
+					total += lecola*45;
+				}
+				var lsprunk = parseInt(document.getElementById("lsprunk").value);
+				if(lsprunk > 0){
+					total += lsprunk*45;
+				}
+				var coco = parseInt(document.getElementById("coco").value);
+				if(coco > 0){
+					total += coco*35;
+				}
+				var tonica = parseInt(document.getElementById("tonica").value);
+				if(tonica > 0){
+					total += tonica*35;
+				}
+				var coffee = parseInt(document.getElementById("coffee").value);
+				if(coffee > 0){
+					total += coffee*55;
+				}
+				var ecola = parseInt(document.getElementById("ecola").value);
+				if(ecola > 0){
+					total += ecola*120;
+				}
+
+				/* GELADOS */
+				var mschoc = parseInt(document.getElementById("mschoc").value);
+				if(mschoc > 0){
+					total += mschoc*60;
+				}
+				var msbnn = parseInt(document.getElementById("msbnn").value);
+				if(msbnn > 0){
+					total += msbnn*60;
+				}
+				var sorvete = parseInt(document.getElementById("sorvete").value);
+				if(sorvete > 0){
+					total += sorvete*45;
+				}
+
+				/* COMBOS */
+				var hs = parseInt(document.getElementById("hs").value);
+				if(hs > 0){
+					total += hs*200;
+				}
+				var dk = parseInt(document.getElementById("dk").value);
+				if(dk > 0){
+					total += dk*400;
+				}
+				var tk = parseInt(document.getElementById("tk").value);
+				if(tk > 0){
+					total += tk*600;
+				}
+				var pk = parseInt(document.getElementById("pk").value);
+				if(pk > 0){
+					total += pk*1500;
+				}
+				var fk = parseInt(document.getElementById("fk").value);
+				if(fk > 0){
+					total += fk*600;
+				}
+				var tpk = parseInt(document.getElementById("tpk").value);
+				if(tpk > 0){
+					total += tpk*800;
+				}
+				var sbs = parseInt(document.getElementById("sbs").value);
+				if(sbs > 0){
+					total += sbs*1800;
+				}
+				var tcs = parseInt(document.getElementById("tcs").value);
+				if(tcs > 0){
+					total += tcs*550;
+				}
+				var tntn = parseInt(document.getElementById("tntn").value);
+				if(tntn > 0){
+					total += tntn*950;
+				}
+				var vgbnd = parseInt(document.getElementById("vgbnd").value);
+				if(vgbnd > 0){
+					total += vgbnd*750;
+				}
+
+				var total_txt = document.getElementById("total");
+				total_txt.value = total;
+			}
+
+      function limpar(){
+
+				//var burger = document.getElementById("burger");
+				//burger.value = 0;
+
+				document.getElementById('burger').value=''
+				document.getElementById('veganburger').value=''
+				document.getElementById('batata').value=''
+				document.getElementById('dog').value=''
+				document.getElementById('frango').value=''
+				document.getElementById('espetoc').value=''
+				document.getElementById('espetof').value=''
+				document.getElementById('bife').value=''
+
+				document.getElementById('agua').value=''
+				document.getElementById('suco').value=''
+				document.getElementById('refricasa').value=''
+				document.getElementById('refricsdiet').value=''
+				document.getElementById('lecola').value=''
+				document.getElementById('lsprunk').value=''
+				document.getElementById('coco').value=''
+				document.getElementById('tonica').value=''
+				document.getElementById('coffee').value=''
+				document.getElementById('ecola').value=''
+
+				document.getElementById('mschoc').value=''
+				document.getElementById('msbnn').value=''
+				document.getElementById('sorvete').value=''
+
+				document.getElementById('hs').value=''
+				document.getElementById('dk').value=''
+				document.getElementById('tk').value=''
+				document.getElementById('pk').value=''
+				document.getElementById('fk').value=''
+				document.getElementById('tpk').value=''
+				document.getElementById('sbs').value=''
+				document.getElementById('tcs').value=''
+				document.getElementById('tntn').value=''
+				document.getElementById('vgbnd').value=''
+
+
+				document.getElementById("total").value = '';
+				
+			}
+		</script>
+		
+<h1>CALCULADORA BURGERSHOT 🍔 </h1>
+
+<div class="fc quadro">
+	<h3>LANCHES:</h3>
+	<h3 style="margin-top: 15px;">BurgerShot:</h3>
+  	<p><input type="number" id="burger" name="burger"  onchange="calcular()" size=4> UN</p>
+	<h3 style="margin-top: 10px;">Vegan BurgerShot:</h3>
+    <p><input type="number" id="veganburger" name="veganburger"  onchange="calcular()" size=4> UN</p>
+	<h3 style="margin-top: 30px;">OUTROS:</h3>
+	<h3 style="margin-top: 30px;">Batata-Frita:</h3>
+    <p><input type="number" id="batata" name="batata"  onchange="calcular()" size=4> UN</p>
+		<h3 style="margin-top: 10px;">Hot-dog:</h3>
+    <p><input type="number" id="dog" name="dog"  onchange="calcular()" size=4> UN</p>
+		<h3 style="margin-top: 10px;">Frango Frito:</h3>
+    <p><input type="number" id="frango" name="frango"  onchange="calcular()" size=4> UN</p>
+		<h3 style="margin-top: 10px;">Espetinho de carne:</h3>
+    <p><input type="number" id="espetoc" name="espetoc"  onchange="calcular()" size=4> UN</p>
+		<h3 style="margin-top: 10px;">Espetinho de frango:</h3>
+    <p><input type="number" id="espetof" name="espetof"  onchange="calcular()" size=4> UN</p>
+		<h3 style="margin-top: 10px;">Bife:</h3>
+    <p><input type="number" id="bife" name="bife"  onchange="calcular()" size=4> UN</p>
+</div>
+<div class="quadro">
+
+	<h3>BEBIDAS:</h3>
+		<h3 style="margin-top: 15px;">Água:</h3>
+    <p><input type="number" id="agua" name="agua"  onchange="calcular()" size=4> UN</p>
+		<h3 style="margin-top: 10px;">Suco:</h3>
+    <p><input type="number" id="suco" name="suco"  onchange="calcular()" size=4> UN</p>
+		<h3 style="margin-top: 10px;">Refri da casa:</h3>
+    <p><input type="number" id="refricasa" name="refricasa"  onchange="calcular()" size=4> UN</p>
+		<h3 style="margin-top: 10px;">Refri da casa diet:</h3>
+    <p><input type="number" id="refricsdiet" name="refricsdiet"  onchange="calcular()" size=4> UN</p>
+		<h3 style="margin-top: 10px;">Refri lata eCola:</h3>
+    <p><input type="number" id="lecola" name="lecola"  onchange="calcular()" size=4> UN</p>
+		<h3 style="margin-top: 10px;">Refri lata Sprunk:</h3>
+    <p><input type="number" id="lsprunk" name="lsprunk"  onchange="calcular()" size=4> UN</p>
+		<h3 style="margin-top: 10px;">Água de coco:</h3>
+    <p><input type="number" id="coco" name="coco"  onchange="calcular()" size=4> UN</p>
+		<h3 style="margin-top: 10px;">Água tônica:</h3>
+    <p><input type="number" id="tonica" name="tonica"  onchange="calcular()" size=4> UN</p>
+		<h3 style="margin-top: 10px;">Café:</h3>
+    <p><input type="number" id="coffee" name="coffee"  onchange="calcular()" size=4> UN</p>
+		<h3 style="margin-top: 10px;">eCola 3L:</h3>
+    <p><input type="number" id="ecola" name="ecola"  onchange="calcular()" size=4> UN</p>
+</div>
+
+<div class="quadro">
+	<h3>GELADOS:</h3>
+    <h3 style="margin-top: 15px;">MilkShake Chocolate:</h3>
+    	<p><input type="number" id="mschoc" name="mschoc"  onchange="calcular()" size=4> UN</p>
+		<h3 style="margin-top: 10px;">MilkShake Banana:</h3>
+    	<p><input type="number" id="msbnn" name="msbnn"  onchange="calcular()" size=4> UN</p>
+		<h3 style="margin-top: 10px;">Sorvete:</h3>
+    	<p><input type="number" id="sorvete" name="sorvete"  onchange="calcular()" size=4> UN</p>
+    	
+</div>
+
+<div class="quadro">
+	<h3>COMBOS</h3>
+	<h3 style="margin-top: 15px;">HEADSHOT:</h3>
+			<p><input type="number" id="hs" name="hs"  onchange="calcular()" size=4> UN</p>
+	<h3 style="margin-top: 10px;">DOUBLE KILL:</h3>
+    	<p><input type="number" id="dk" name="dk"  onchange="calcular()" size=4> UN</p>
+	<h3 style="margin-top: 10px;">TRIPLE KILL:</h3>
+    	<p><input type="number" id="tk" name="tk"  onchange="calcular()" size=4> UN</p>
+	<h3 style="margin-top: 10px;">PENTA KILL:</h3>
+    	<p><input type="number" id="pk" name="pk"  onchange="calcular()" size=4> UN</p>
+	<h3 style="margin-top: 10px;">FREE KILL:</h3>
+    	<p><input type="number" id="fk" name="fk"  onchange="calcular()" size=4> UN</p>
+	<h3 style="margin-top: 10px;">TROPICAL KILL:</h3>
+    	<p><input type="number" id="tpk" name="tpk"  onchange="calcular()" size=4> UN</p>
+	<h3 style="margin-top: 10px;">SUPER BURGERSHOT:</h3>
+    	<p><input type="number" id="sbs" name="sbs"  onchange="calcular()" size=4> UN</p>
+
+	<h3 style="margin-top: 15px;"><b>COMBOS SOMENTE PARA A POLICIA</b></h3>
+	<h3 style="margin-top: 15px;">10-CESAR:</h3>
+			<p><input type="number" id="tcs" name="tcs"  onchange="calcular()" size=4> UN</p>
+	<h3 style="margin-top: 10px;">10-10:</h3>
+    	<p><input type="number" id="tntn" name="tntn"  onchange="calcular()" size=4> UN</p>
+
+	<h3 style="margin-top: 15px;"><b>COMBOS PROIBIDO PARA A POLICIA</b></h3>
+	<h3 style="margin-top: 15px;">COMBO VAGABUNDO:</h3>
+	<p><input type="number" id="vgbnd" name="vgbnd"  onchange="calcular()" size=4> UN</p>
+
+
+</div>
+
+<div class="quadro">
+	<h3>CÁLCULO:</h3>
+	<button onclick="limpar()" style="background-color: #ff0000;">LIMPAR TUDO</button><br>
+ 	<p3><b>TOTAL: U$ <input type="text" id="total" name="total" onlyread="true" size=5 style="margin-right:10px" disabled></b></p3>
+</div>
+
+
